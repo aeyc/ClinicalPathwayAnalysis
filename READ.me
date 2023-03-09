@@ -1,0 +1,7 @@
+Server connection and Jupyter Notebook pipeline:
+
+lsof -i :<port_number> #listen port whether it is used or not
+
+ssh -L <port_number>:localhost:<port_number> <username> #pipe
+
+jupyter notebook --no-browser --port <port_number> #At the output, the notebook can be reached via link (e.g 0.0.0.0/<portnumber>) on local browser
